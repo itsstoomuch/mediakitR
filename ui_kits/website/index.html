@@ -27,6 +27,7 @@
 <!-- Component scripts -->
 <script type="text/babel" src="Nav.jsx"></script>
 <script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="Marquee.jsx"></script>
 <script type="text/babel" src="About.jsx"></script>
 <script type="text/babel" src="ContentGrid.jsx"></script>
 <script type="text/babel" src="WhyCollab.jsx"></script>
@@ -54,10 +55,14 @@ const App = () => (
   <>
     <Nav />
     <Hero />
+    <Marquee bg="#C96A4E" fg="#FBF2E4" />
     <About />
+    <Marquee bg="#3D2B1F" fg="#F3D89B" items={['Slow mornings', '✦', 'Real food', '✦', 'No filters', '✦', 'Mumbai light', '✦', 'Window-lit shots', '✦', 'Honest captions', '✦', 'Small following', '✦', 'High trust', '✦']} />
     <ContentGrid />
+    <Marquee bg="#6E7A4F" fg="#FBF2E4" items={['Beauty & Self Care', '✦', 'Calm Routines', '✦', 'Egg Recipes', '✦', 'Comfort Food', '✦', 'Quick Bites', '✦', 'Slow Mornings', '✦']} />
     <WhyCollab />
     <Packages />
+    <Marquee bg="#E8C5C0" fg="#3D2B1F" items={['Let\'s collaborate', '✦', 'Story Feature', '✦', 'Feed Post', '✦', 'Full Collab', '✦', 'Contact for rates', '✦', 'Reheeshaa', '✦']} />
     <FeedStrip />
     <Contact />
   </>

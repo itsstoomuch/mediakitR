@@ -58,7 +58,7 @@ const Packages = () => {
 
         <div className="packages-grid">
           {PACKAGES.map((pk, i) => (
-            <div key={i} className="package-card" style={{ borderRight: i < 2 ? '1px solid rgba(61,43,31,.2)' : 'none', background: pk.featured ? '#3D2B1F' : 'transparent', opacity:visible?1:0, transform:visible?'translateY(0)':'translateY(30px)', transition:`opacity .7s ease-out ${i*.15}s, transform .7s ease-out ${i*.15}s` }}>
+            <div key={i} className="package-card card-lift" style={{ borderRight: i < 2 ? '1px solid rgba(61,43,31,.2)' : 'none', background: pk.featured ? '#3D2B1F' : 'transparent', opacity:visible?1:0, transform:visible?'translateY(0)':'translateY(30px)', transition:`opacity .7s ease-out ${i*.15}s, transform .7s ease-out ${i*.15}s` }}>
               {pk.ribbon && <span style={{ position:'absolute', top:12, right:12, fontSize:9, letterSpacing:'.18em', textTransform:'uppercase', background:'#C96A4E', color:'#FBF2E4', padding:'4px 8px', fontWeight:600, transform:'rotate(4deg)' }}>{pk.ribbon}</span>}
               <div style={{ fontFamily:"'Fraunces',serif", fontStyle:'italic', fontSize:13, color:pk.featured?'#F3D89B':'#C96A4E' }}>{pk.num}</div>
               <h3 style={{ fontFamily:"'Fraunces',serif", fontWeight:400, fontSize:'clamp(22px,2.5vw,28px)', lineHeight:1.05, letterSpacing:'-.02em', color:pk.featured?'#FBF2E4':'#3D2B1F' }}>

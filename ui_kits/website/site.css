@@ -10,6 +10,30 @@
 @keyframes scrollPulse { 0%,100%{opacity:.3} 50%{opacity:1} }
 @keyframes floatStar  { 0%,100%{transform:rotate(0deg) scale(1)} 50%{transform:rotate(15deg) scale(1.1)} }
 @keyframes steamRise  { 0%{transform:translateY(0) scaleX(1); opacity:.7} 100%{transform:translateY(-24px) scaleX(1.2); opacity:0} }
+@keyframes spinSlow   { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
+@keyframes pulseDot   { 0%,100%{transform:scale(1); opacity:.9} 50%{transform:scale(1.18); opacity:1} }
+@keyframes driftX     { 0%,100%{transform:translateX(0)} 50%{transform:translateX(10px)} }
+@keyframes fadeUp     { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+@keyframes morphBlob  { 0%,100%{border-radius:60% 40% 55% 45%/50% 60% 40% 50%} 50%{border-radius:40% 60% 45% 55%/60% 40% 50% 40%} }
+
+/* Hover lift for cards */
+.card-lift { transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s ease; }
+.card-lift:hover { transform: translateY(-6px) !important; box-shadow: 0 24px 48px -16px rgba(61,43,31,.28) !important; }
+
+/* Page-load fade-up for hero content */
+.fade-up-1 { animation: fadeUp .9s cubic-bezier(.22,1,.36,1) .1s both; }
+.fade-up-2 { animation: fadeUp .9s cubic-bezier(.22,1,.36,1) .3s both; }
+.fade-up-3 { animation: fadeUp .9s cubic-bezier(.22,1,.36,1) .5s both; }
+.fade-up-4 { animation: fadeUp .9s cubic-bezier(.22,1,.36,1) .7s both; }
+
+/* Morph blob */
+.blob-morph { animation: morphBlob 6s ease-in-out infinite; }
+/* Spin ring */
+.spin-slow  { animation: spinSlow 18s linear infinite; }
+/* Pulse dot */
+.pulse-dot  { animation: pulseDot 2.5s ease-in-out infinite; }
+/* Drift X */
+.drift-x    { animation: driftX 5s ease-in-out infinite; }
 
 /* ─── NAV ─── */
 .nav-root {

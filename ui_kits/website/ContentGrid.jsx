@@ -44,7 +44,7 @@ const ContentGrid = () => {
 
         <div className="content-grid">
           {CARDS.map((card, i) => (
-            <div key={i} style={{ position:'relative', aspectRatio:'3/4', overflow:'hidden', boxShadow:'0 14px 30px -18px rgba(61,43,31,.3)', opacity:visible?1:0, transform:visible?'translateY(0)':'translateY(40px)', transition:`opacity .7s ease-out ${i * 0.1}s, transform .7s ease-out ${i * 0.1}s`, cursor:'pointer' }}
+            <div key={i} className="card-lift" style={{ position:'relative', aspectRatio:'3/4', overflow:'hidden', boxShadow:'0 14px 30px -18px rgba(61,43,31,.3)', opacity:visible?1:0, transform:visible?'translateY(0)':'translateY(40px)', transition:`opacity .7s ease-out ${i * 0.1}s, transform .7s ease-out ${i * 0.1}s`, cursor:'pointer' }}
               onMouseEnter={e => e.currentTarget.querySelector('.ph').style.transform = 'scale(1.05)'}
               onMouseLeave={e => e.currentTarget.querySelector('.ph').style.transform = 'scale(1)'}>
               <div className="ph" style={{ position:'absolute', inset:0, backgroundImage:`url('${card.img}')`, backgroundSize:'cover', backgroundPosition:'center', transition:'.5s ease-out' }}></div>

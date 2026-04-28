@@ -18,21 +18,21 @@ const Hero = () => {
 
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1180, margin: '0 auto', padding: 'clamp(90px,14vw,120px) clamp(20px,5vw,48px) 80px', width: '100%' }}>
         {/* Eyebrow */}
-        <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 11, letterSpacing: '.22em', textTransform: 'uppercase', color: 'rgba(251,242,228,.7)', fontWeight: 500, marginBottom: 24 }}>
+        <div className="fade-up-1" style={{ fontFamily: "'Inter',sans-serif", fontSize: 11, letterSpacing: '.22em', textTransform: 'uppercase', color: 'rgba(251,242,228,.7)', fontWeight: 500, marginBottom: 24 }}>
           Creator · Slow Living · Mumbai
         </div>
 
         {/* Headline */}
-        <h1 style={{ fontFamily: "'Fraunces',serif", fontWeight: 400, fontSize: 'clamp(52px,9vw,120px)', lineHeight: .92, letterSpacing: '-.035em', color: '#FBF2E4', maxWidth: 800, marginBottom: 28 }}>
+        <h1 className="fade-up-2" style={{ fontFamily: "'Fraunces',serif", fontWeight: 400, fontSize: 'clamp(52px,9vw,120px)', lineHeight: .92, letterSpacing: '-.035em', color: '#FBF2E4', maxWidth: 800, marginBottom: 28 }}>
           Slow mornings,<br />simple <em style={{ fontStyle: 'italic', color: '#C96A4E' }}>meals</em>.
         </h1>
 
-        <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 'clamp(14px,2vw,16px)', lineHeight: 1.65, color: 'rgba(251,242,228,.75)', maxWidth: 480, marginBottom: 40 }}>
+        <p className="fade-up-3" style={{ fontFamily: "'Inter',sans-serif", fontSize: 'clamp(14px,2vw,16px)', lineHeight: 1.65, color: 'rgba(251,242,228,.75)', maxWidth: 480, marginBottom: 40 }}>
           From a small flat in Mumbai — I cook, I rest, I document the unhurried parts of everyday life.
         </p>
 
         {/* Niche pills */}
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 56 }}>
+        <div className="fade-up-4" style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 56 }}>
           {[['Slow Living', '#3D2B1F', '#FBF2E4'], ['Food', '#C96A4E', '#FBF2E4'], ['Beauty & Wellness', '#E8C5C0', '#3D2B1F'], ['Calm Routines', 'transparent', '#FBF2E4']].map(([label, bg, fg]) => (
             <span key={label} style={{ fontFamily: "'Inter',sans-serif", fontSize: 11, letterSpacing: '.18em', textTransform: 'uppercase', padding: '8px 14px', borderRadius: 999, background: bg, color: fg, border: bg === 'transparent' ? '1px solid rgba(251,242,228,.5)' : 'none' }}>{label}</span>
           ))}
@@ -68,6 +68,11 @@ const Hero = () => {
       {/* Wide leaf */}
       <svg width="140" height="90" style={{ position:'absolute', top:'30%', right:'-20px', color:'rgba(110,122,79,.2)', animation:'floatLeaf1 8s ease-in-out infinite .5s', zIndex:2, pointerEvents:'none' }} viewBox="0 0 120 80">
         <path d="M5 40 C25 10,55 10,75 28 C85 38,100 42,115 40 C100 55,85 62,70 58 C50 75,25 70,5 40 Z" fill="currentColor"></path>
+      </svg>
+
+      {/* Spinning ring */}
+      <svg width="90" height="90" style={{ position:'absolute', top:'14%', left:'38%', color:'rgba(243,216,155,.25)', animation:'spinSlow 18s linear infinite', zIndex:2, pointerEvents:'none' }} viewBox="0 0 90 90">
+        <circle cx="45" cy="45" r="40" stroke="currentColor" strokeWidth="1.5" fill="none" strokeDasharray="8 6"></circle>
       </svg>
 
       {/* Scribble circle */}
