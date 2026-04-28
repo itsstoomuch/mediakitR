@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#EFE3D1;padding:20px;}
+  .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+  .swatch{border-radius:6px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08);}
+  .color{height:80px;}
+  .info{background:#fff;padding:10px 12px;}
+  .name{font-size:11px;font-weight:500;letter-spacing:.05em;color:#3D2B1F;margin-bottom:2px;}
+  .hex{font-size:10px;color:#5A4436;letter-spacing:.03em;}
+  .desc{font-size:9px;color:#888;margin-top:2px;line-height:1.4;}
+</style></head><body>
+<div class="grid">
+  <div class="swatch"><div class="color" style="background:#FBF2E4;border:1px solid #e0d0be;"></div><div class="info"><div class="name">cream</div><div class="hex">#FBF2E4</div><div class="desc">Primary bg</div></div></div>
+  <div class="swatch"><div class="color" style="background:#F6E8D4;border:1px solid #e0d0be;"></div><div class="info"><div class="name">cream-2</div><div class="hex">#F6E8D4</div><div class="desc">Secondary bg</div></div></div>
+  <div class="swatch"><div class="color" style="background:#EFE3D1;border:1px solid #d8c9b5;"></div><div class="info"><div class="name">page-bg</div><div class="hex">#EFE3D1</div><div class="desc">Outer bg</div></div></div>
+  <div class="swatch"><div class="color" style="background:#E8C5C0;"></div><div class="info"><div class="name">rose</div><div class="hex">#E8C5C0</div><div class="desc">Section bg</div></div></div>
+  <div class="swatch"><div class="color" style="background:#D9A5A0;"></div><div class="info"><div class="name">rose-deep</div><div class="hex">#D9A5A0</div><div class="desc">Blush accent</div></div></div>
+  <div class="swatch"><div class="color" style="background:#3D2B1F;"></div><div class="info" style="background:#3D2B1F;"><div class="name" style="color:#FBF2E4;">mocha</div><div class="hex" style="color:#c9a88a;">#3D2B1F</div><div class="desc" style="color:#8a6a52;">Primary text</div></div></div>
+  <div class="swatch"><div class="color" style="background:#5A4436;"></div><div class="info" style="background:#5A4436;"><div class="name" style="color:#FBF2E4;">mocha-soft</div><div class="hex" style="color:#c9a88a;">#5A4436</div><div class="desc" style="color:#a88060;">Secondary text</div></div></div>
+  <div class="swatch"><div class="color" style="background:#2A1C13;"></div><div class="info" style="background:#2A1C13;"><div class="name" style="color:#FBF2E4;">ink</div><div class="hex" style="color:#c9a88a;">#2A1C13</div><div class="desc" style="color:#7a5a42;">Deepest text</div></div></div>
+  <div class="swatch"><div class="color" style="background:#C96A4E;"></div><div class="info"><div class="name">terracotta</div><div class="hex">#C96A4E</div><div class="desc">Primary accent</div></div></div>
+  <div class="swatch"><div class="color" style="background:#6E7A4F;"></div><div class="info"><div class="name">olive</div><div class="hex">#6E7A4F</div><div class="desc">Nature accent</div></div></div>
+  <div class="swatch" style="grid-column:span 2"><div class="color" style="background:#F3D89B;border:1px solid #e0c880;"></div><div class="info"><div class="name">yellow</div><div class="hex">#F3D89B</div><div class="desc">Warm highlight / dark-bg accent</div></div></div>
+</div>
+</body></html>

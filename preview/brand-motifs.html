@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#FBF2E4;width:700px;height:380px;overflow:hidden;position:relative;font-family:'Inter',sans-serif;}
+
+.motif{position:absolute;pointer-events:none;}
+
+/* float keyframes — each slightly offset */
+@keyframes f1{0%,100%{transform:translateY(0px) rotate(-20deg)}50%{transform:translateY(-14px) rotate(-18deg)}}
+@keyframes f2{0%,100%{transform:translateY(0px) rotate(140deg)}50%{transform:translateY(-10px) rotate(143deg)}}
+@keyframes f3{0%,100%{transform:translateY(0px) rotate(8deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes f4{0%,100%{transform:translateY(0px) rotate(-8deg) scale(1)}50%{transform:translateY(-8px) rotate(-6deg) scale(1.04)}}
+@keyframes f5{0%,100%{transform:translateY(0px)}50%{transform:translateY(-16px)}}
+@keyframes f6{0%,100%{transform:translateY(0px) rotate(30deg)}50%{transform:translateY(-10px) rotate(28deg)}}
+@keyframes f7{0%,100%{transform:translateY(0px) rotate(-14deg)}50%{transform:translateY(-9px) rotate(-12deg)}}
+@keyframes f8{0%,100%{transform:translateY(0px) scale(1)}50%{transform:translateY(-6px) scale(1.06)}}
+@keyframes tape1{0%,100%{transform:rotate(-18deg) translateY(0)}50%{transform:rotate(-18deg) translateY(-8px)}}
+@keyframes tape2{0%,100%{transform:rotate(12deg) translateY(0)}50%{transform:rotate(12deg) translateY(-10px)}}
+</style>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="leaf" viewBox="0 0 100 120"><path d="M50 5 C15 25,15 95,50 115 C85 95,85 25,50 5 Z" fill="currentColor"></path></symbol>
+    <symbol id="leaf2" viewBox="0 0 120 80"><path d="M5 40 C25 10,55 10,75 28 C85 38,100 42,115 40 C100 55,85 62,70 58 C50 75,25 70,5 40 Z" fill="currentColor"></path></symbol>
+    <symbol id="sprig" viewBox="0 0 100 140"><path d="M50 5 L50 135" stroke="currentColor" stroke-width="2" fill="none"></path><path d="M50 25 Q30 20 25 5 Q45 15 50 25 Z" fill="currentColor"></path><path d="M50 50 Q70 45 75 30 Q55 40 50 50 Z" fill="currentColor"></path><path d="M50 80 Q25 78 18 60 Q43 70 50 80 Z" fill="currentColor"></path><path d="M50 110 Q75 105 82 90 Q55 100 50 110 Z" fill="currentColor"></path></symbol>
+    <symbol id="scribble-under" viewBox="0 0 160 24"><path d="M4 14 Q 30 4,55 12 T 105 14 T 156 10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"></path></symbol>
+    <symbol id="star4" viewBox="0 0 20 20"><path d="M10 0 L12 8 L20 10 L12 12 L10 20 L8 12 L0 10 L8 8 Z" fill="currentColor"></path></symbol>
+  </defs>
+</svg>
+
+<!-- Sprig top-left -->
+<svg class="motif" style="top:-10px;left:20px;width:90px;color:#6E7A4F;opacity:.5;animation:f1 5s ease-in-out infinite;"><use href="#sprig"></use></svg>
+
+<!-- Sprig bottom-right -->
+<svg class="motif" style="bottom:10px;right:30px;width:70px;color:#6E7A4F;opacity:.35;animation:f2 6.5s ease-in-out infinite 1s;"><use href="#sprig"></use></svg>
+
+<!-- Wide leaf mid-left -->
+<svg class="motif" style="top:100px;left:-10px;width:130px;color:#6E7A4F;opacity:.3;animation:f6 7s ease-in-out infinite .5s;"><use href="#leaf2"></use></svg>
+
+<!-- Narrow leaf top-right -->
+<svg class="motif" style="top:20px;right:80px;width:60px;height:80px;color:#6E7A4F;opacity:.4;animation:f3 5.5s ease-in-out infinite 1.5s;"><use href="#leaf"></use></svg>
+
+<!-- Narrow leaf bottom-mid -->
+<svg class="motif" style="bottom:30px;left:200px;width:50px;height:65px;color:#6E7A4F;opacity:.25;animation:f7 6s ease-in-out infinite 2s;"><use href="#leaf"></use></svg>
+
+<!-- Stars -->
+<svg class="motif" style="top:50px;left:260px;width:28px;color:#C96A4E;opacity:.9;animation:f8 4s ease-in-out infinite;"><use href="#star4"></use></svg>
+<svg class="motif" style="top:160px;right:150px;width:18px;color:#F3D89B;opacity:.85;animation:f8 5s ease-in-out infinite 1.2s;"><use href="#star4"></use></svg>
+<svg class="motif" style="bottom:60px;left:420px;width:14px;color:#3D2B1F;opacity:.5;animation:f8 4.5s ease-in-out infinite .8s;"><use href="#star4"></use></svg>
+
+<!-- Scribble underline — floating -->
+<svg class="motif" style="top:220px;left:80px;width:110px;color:#C96A4E;opacity:.6;animation:f5 5.5s ease-in-out infinite .3s;"><use href="#scribble-under"></use></svg>
+
+<!-- Scribble circle -->
+<div class="motif" style="top:130px;right:40px;width:90px;height:55px;border:2.5px solid #C96A4E;border-radius:50%;transform:rotate(-8deg);opacity:.55;animation:f4 6s ease-in-out infinite .7s;"></div>
+
+<!-- Dot blobs -->
+<div class="motif" style="bottom:40px;right:200px;width:56px;height:56px;border-radius:50%;background:#C96A4E;opacity:.75;animation:f5 7s ease-in-out infinite 1.8s;"></div>
+<div class="motif" style="top:60px;left:380px;width:70px;height:70px;border-radius:50%;background:#E8C5C0;opacity:.6;animation:f5 6s ease-in-out infinite .4s;"></div>
+<div class="motif" style="top:250px;right:260px;width:50px;height:50px;border-radius:50%;background:#F3D89B;border:1px solid #e0c880;opacity:.7;animation:f5 5s ease-in-out infinite 1.1s;"></div>
+
+<!-- Tape strips -->
+<div class="motif" style="top:40px;left:520px;width:90px;height:22px;background:rgba(233,197,192,.85);box-shadow:0 2px 6px rgba(61,43,31,.1);animation:tape1 5s ease-in-out infinite .6s;transform:rotate(-18deg);"></div>
+<div class="motif" style="bottom:90px;left:80px;width:80px;height:20px;background:rgba(243,216,155,.9);box-shadow:0 2px 6px rgba(61,43,31,.1);animation:tape2 6s ease-in-out infinite 1.4s;transform:rotate(12deg);"></div>
+
+</body></html>

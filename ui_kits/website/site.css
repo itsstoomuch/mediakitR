@@ -1,0 +1,134 @@
+/* ─── Reheeshaa — Global responsive styles ─── */
+
+/* Animation keyframes (shared across all sections) */
+@keyframes floatSlow  { 0%,100%{transform:translateY(0)}    50%{transform:translateY(-12px)} }
+@keyframes floatSlowR { 0%,100%{transform:translateY(0) rotate(12deg)} 50%{transform:translateY(-10px) rotate(14deg)} }
+@keyframes floatLeaf1 { 0%,100%{transform:translateY(0) rotate(0deg)}   50%{transform:translateY(-14px) rotate(2deg)} }
+@keyframes floatLeaf2 { 0%,100%{transform:translateY(0) rotate(140deg)} 50%{transform:translateY(-10px) rotate(142deg)} }
+@keyframes floatLeaf3 { 0%,100%{transform:translateY(0) rotate(160deg)} 50%{transform:translateY(-8px)  rotate(162deg)} }
+@keyframes floatTape  { 0%,100%{transform:rotate(-18deg) translateY(0)} 50%{transform:rotate(-18deg) translateY(-8px)} }
+@keyframes scrollPulse { 0%,100%{opacity:.3} 50%{opacity:1} }
+@keyframes floatStar  { 0%,100%{transform:rotate(0deg) scale(1)} 50%{transform:rotate(15deg) scale(1.1)} }
+@keyframes steamRise  { 0%{transform:translateY(0) scaleX(1); opacity:.7} 100%{transform:translateY(-24px) scaleX(1.2); opacity:0} }
+
+/* ─── NAV ─── */
+.nav-root {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 48px;
+  transition: background .4s ease-out, border-color .4s ease-out, backdrop-filter .4s ease-out;
+}
+.nav-links {
+  display: flex; gap: 28px;
+  font-size: 12px; color: #5A4436;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.nav-links a { text-decoration: none; color: inherit; transition: color .2s; }
+.nav-links a:hover { color: #C96A4E; }
+.nav-cta {
+  font-size: 11px; letter-spacing: .16em; text-transform: uppercase; font-weight: 500;
+  padding: 9px 20px; border-radius: 999px; background: #3D2B1F; color: #FBF2E4;
+  text-decoration: none; transition: background .3s ease-out;
+}
+.nav-cta:hover { background: #C96A4E; }
+.nav-hamburger {
+  display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px;
+  background: none; border: none;
+}
+.nav-hamburger span {
+  display: block; width: 24px; height: 2px; background: #3D2B1F;
+  transition: all .3s ease-out; transform-origin: center;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-mobile-menu {
+  display: none; position: fixed; inset: 0; top: 0; z-index: 99;
+  background: rgba(239,227,209,.97); backdrop-filter: blur(16px);
+  flex-direction: column; align-items: center; justify-content: center; gap: 36px;
+  opacity: 0; pointer-events: none; transition: opacity .35s ease-out;
+}
+.nav-mobile-menu.open { opacity: 1; pointer-events: all; }
+.nav-mobile-menu a {
+  font-family: 'Fraunces', serif; font-size: 40px; font-weight: 400;
+  color: #3D2B1F; text-decoration: none; letter-spacing: -.02em;
+  transition: color .2s;
+}
+.nav-mobile-menu a:hover { color: #C96A4E; }
+.nav-mobile-menu .nav-mobile-cta {
+  font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: .2em;
+  text-transform: uppercase; padding: 14px 32px; border-radius: 999px;
+  background: #3D2B1F; color: #FBF2E4; text-decoration: none; margin-top: 8px;
+}
+
+/* ─── SECTION SHARED ─── */
+.section-pad { padding: 100px 48px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 44px; }
+.section-divider { flex: 1; height: 1px; background: rgba(61,43,31,.25); margin-left: 12px; }
+
+/* ─── ABOUT ─── */
+.about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; align-items: start; }
+
+/* ─── CONTENT GRID ─── */
+.content-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+/* ─── COLLAB ─── */
+.collab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+/* ─── PACKAGES ─── */
+.packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #3D2B1F; border-bottom: 1px solid #3D2B1F; }
+.package-card { padding: 32px 28px; display: flex; flex-direction: column; gap: 12px; min-height: 340px; position: relative; }
+
+/* ─── FEED ─── */
+.feed-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; }
+
+/* ─── CONTACT ─── */
+.contact-details { display: grid; grid-template-columns: 1fr 1fr; max-width: 580px; border-top: 1px solid #3D2B1F; padding-top: 28px; gap: 20px; }
+
+/* ─── TABLET 900px ─── */
+@media (max-width: 900px) {
+  .content-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .collab-grid  { grid-template-columns: 1fr 1fr !important; }
+  .packages-grid { grid-template-columns: 1fr 1fr !important; }
+}
+
+/* ─── MOBILE 768px ─── */
+@media (max-width: 768px) {
+  .nav-root {
+    padding: 14px 20px !important;
+    background: rgba(251,242,228,.96) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border-bottom: 1px solid rgba(61,43,31,.1) !important;
+  }
+  .nav-links { display: none !important; }
+  .nav-cta   { display: none !important; }
+  .nav-hamburger { display: flex !important; }
+
+  .section-pad { padding: 64px 20px !important; }
+  .section-divider { display: none !important; }
+
+  .about-grid  { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .collab-grid { grid-template-columns: 1fr !important; }
+
+  .packages-grid {
+    grid-template-columns: 1fr !important;
+    border-top: none !important; border-bottom: none !important;
+  }
+  .package-card {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(61,43,31,.15) !important;
+  }
+  .package-card:last-child { border-bottom: none !important; }
+
+  .feed-grid { grid-template-columns: repeat(3, 1fr) !important; }
+
+  .contact-details { grid-template-columns: 1fr !important; max-width: 100% !important; }
+}
+
+/* ─── SMALL MOBILE 480px ─── */
+@media (max-width: 480px) {
+  .content-grid { grid-template-columns: 1fr !important; }
+  .feed-grid    { grid-template-columns: repeat(2, 1fr) !important; }
+}

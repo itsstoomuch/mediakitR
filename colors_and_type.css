@@ -1,0 +1,266 @@
+/* ============================================================
+   Reheeshaa Design System — Colors & Typography Tokens
+   Source: media kit HTML, April 2026
+   Fonts: Fraunces, Inter, Caveat (Google Fonts)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,300;1,9..144,400;1,9..144,600;1,9..144,700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600&display=swap');
+
+:root {
+
+  /* ──────────────────────────────────────────
+     BASE COLOR PALETTE
+  ────────────────────────────────────────── */
+
+  /* Cream / Warm Whites */
+  --color-cream:        #FBF2E4;   /* Primary page/card background */
+  --color-cream-2:      #F6E8D4;   /* Secondary bg, stats bar, package bg */
+  --color-page-bg:      #EFE3D1;   /* Outer page / body background */
+
+  /* Rose / Blush */
+  --color-rose:         #E8C5C0;   /* Section bg (about), light accent */
+  --color-rose-deep:    #D9A5A0;   /* Deeper blush, ampersand accent */
+
+  /* Mocha / Brown */
+  --color-mocha:        #3D2B1F;   /* Primary text, dark section bg */
+  --color-mocha-soft:   #5A4436;   /* Secondary text, labels, captions */
+  --color-ink:          #2A1C13;   /* Deepest text color */
+
+  /* Accent */
+  --color-terracotta:   #C96A4E;   /* Primary accent — italic em, badges, CTAs */
+  --color-olive:        #6E7A4F;   /* Nature / botanical accent */
+  --color-yellow:       #F3D89B;   /* Warm highlight, star accents, dark-bg em */
+
+  /* ──────────────────────────────────────────
+     SEMANTIC COLOR TOKENS
+  ────────────────────────────────────────── */
+
+  --bg-primary:         var(--color-cream);
+  --bg-secondary:       var(--color-cream-2);
+  --bg-section-dark:    var(--color-mocha);
+  --bg-section-rose:    var(--color-rose);
+  --bg-page:            var(--color-page-bg);
+
+  --text-primary:       var(--color-ink);
+  --text-secondary:     var(--color-mocha-soft);
+  --text-on-dark:       var(--color-cream);
+  --text-on-dark-muted: rgba(251, 242, 228, 0.75);
+  --text-accent:        var(--color-terracotta);
+  --text-accent-dark:   var(--color-yellow);   /* accent on dark bg */
+
+  --border-light:       rgba(61, 43, 31, 0.12);
+  --border-medium:      rgba(61, 43, 31, 0.25);
+  --border-dark:        var(--color-mocha);
+
+  --accent-primary:     var(--color-terracotta);
+  --accent-secondary:   var(--color-olive);
+  --accent-highlight:   var(--color-yellow);
+
+  /* ──────────────────────────────────────────
+     TYPOGRAPHY — FONT FAMILIES
+  ────────────────────────────────────────── */
+
+  --font-display:  'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:     'Inter', system-ui, -apple-system, sans-serif;
+  --font-script:   'Caveat', cursive;
+  --font-mono:     ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* ──────────────────────────────────────────
+     TYPOGRAPHY — SCALE & STYLES
+  ────────────────────────────────────────── */
+
+  /* Hero / Mega Display */
+  --text-hero:            clamp(64px, 9vw, 128px);
+  --text-hero-weight:     400;
+  --text-hero-leading:    0.92;
+  --text-hero-tracking:   -0.035em;
+
+  /* Section headings (H2) */
+  --text-h2:              52px;
+  --text-h2-weight:       400;
+  --text-h2-leading:      1;
+  --text-h2-tracking:     -0.03em;
+
+  /* Large stat numbers */
+  --text-stat:            56px;
+  --text-stat-weight:     400;
+  --text-stat-leading:    1;
+  --text-stat-tracking:   -0.03em;
+
+  /* Card / section sub-headings (H3) */
+  --text-h3:              32px;
+  --text-h3-weight:       400;
+  --text-h3-leading:      1.05;
+  --text-h3-tracking:     -0.02em;
+
+  /* Card titles (smaller) */
+  --text-card-title:      26px;
+  --text-card-title-leading: 1.05;
+  --text-card-title-tracking: -0.02em;
+
+  /* Lede / intro paragraph (serif) */
+  --text-lede:            30px;
+  --text-lede-weight:     300;
+  --text-lede-leading:    1.3;
+  --text-lede-tracking:   -0.01em;
+
+  /* Handle / italic label */
+  --text-handle:          22px;
+
+  /* Body text */
+  --text-body:            15px;
+  --text-body-leading:    1.65;
+
+  /* Small body */
+  --text-body-sm:         14px;
+  --text-body-sm-leading: 1.6;
+
+  /* Captions / notes */
+  --text-caption:         12px;
+
+  /* Eyebrow / label */
+  --text-eyebrow:         11px;
+  --text-eyebrow-tracking: 0.22em;
+  --text-eyebrow-weight:  500;
+
+  /* Badge / tag */
+  --text-badge:           10px;
+  --text-badge-tracking:  0.18em;
+  --text-badge-weight:    600;
+
+  /* Script signature */
+  --text-sig:             56px;
+
+  /* ──────────────────────────────────────────
+     SPACING
+  ────────────────────────────────────────── */
+
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    14px;
+  --space-4:    18px;
+  --space-5:    24px;
+  --space-6:    28px;
+  --space-7:    32px;
+  --space-8:    40px;
+  --space-9:    48px;
+  --space-10:   60px;
+  --space-11:   80px;
+  --space-12:   90px;
+
+  --section-padding:  80px 48px;
+  --page-max-width:   1180px;
+  --page-margin:      32px auto;
+
+  /* ──────────────────────────────────────────
+     BORDER RADIUS
+  ────────────────────────────────────────── */
+
+  --radius-none:    0px;
+  --radius-sm:      4px;      /* keyword cards */
+  --radius-pill:    999px;    /* tags, badges */
+  --radius-circle:  50%;      /* portrait, food stickers */
+
+  /* ──────────────────────────────────────────
+     SHADOWS
+  ────────────────────────────────────────── */
+
+  --shadow-page:    0 30px 80px -30px rgba(61,43,31,.25), 0 2px 4px rgba(61,43,31,.05);
+  --shadow-card:    0 14px 30px -18px rgba(61,43,31,.3);
+  --shadow-sticker: 0 20px 40px -15px rgba(61,43,31,.3);
+  --shadow-badge:   0 4px 10px rgba(61,43,31,.25);
+  --shadow-keyword: 0 6px 18px -8px rgba(61,43,31,.2);
+
+  /* ──────────────────────────────────────────
+     TRANSITIONS
+  ────────────────────────────────────────── */
+
+  --transition-fast:   0.2s ease-out;
+  --transition-base:   0.35s ease-out;
+  --transition-slow:   0.6s ease-out;
+
+  /* ──────────────────────────────────────────
+     ANIMATION KEYFRAMES (reference names)
+  ────────────────────────────────────────── */
+  /* float:       gentle translateY(0 → -8px → 0), 4s infinite ease-in-out */
+  /* fade-up:     opacity 0 → 1, translateY 20px → 0, 0.6s ease-out */
+  /* zoom-in:     scale 1 → 1.03 on hover, 0.5s ease-out */
+
+}
+
+/* ──────────────────────────────────────────
+   SEMANTIC ELEMENT STYLES
+────────────────────────────────────────── */
+
+.r-h1 {
+  font-family: var(--font-display);
+  font-weight: var(--text-hero-weight);
+  font-size: var(--text-hero);
+  line-height: var(--text-hero-leading);
+  letter-spacing: var(--text-hero-tracking);
+  color: var(--text-primary);
+}
+
+.r-h2 {
+  font-family: var(--font-display);
+  font-weight: var(--text-h2-weight);
+  font-size: var(--text-h2);
+  line-height: var(--text-h2-leading);
+  letter-spacing: var(--text-h2-tracking);
+  color: var(--text-primary);
+}
+
+.r-h3 {
+  font-family: var(--font-display);
+  font-weight: var(--text-h3-weight);
+  font-size: var(--text-h3);
+  line-height: var(--text-h3-leading);
+  letter-spacing: var(--text-h3-tracking);
+  color: var(--text-primary);
+}
+
+.r-lede {
+  font-family: var(--font-display);
+  font-weight: var(--text-lede-weight);
+  font-size: var(--text-lede);
+  line-height: var(--text-lede-leading);
+  letter-spacing: var(--text-lede-tracking);
+  color: var(--text-primary);
+}
+
+.r-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--text-body-leading);
+  color: var(--text-secondary);
+}
+
+.r-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-eyebrow);
+  font-weight: var(--text-eyebrow-weight);
+  letter-spacing: var(--text-eyebrow-tracking);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.r-badge {
+  font-family: var(--font-body);
+  font-size: var(--text-badge);
+  font-weight: var(--text-badge-weight);
+  letter-spacing: var(--text-badge-tracking);
+  text-transform: uppercase;
+  padding: 7px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-primary);
+  color: var(--color-cream);
+}
+
+.r-sig {
+  font-family: var(--font-script);
+  font-size: var(--text-sig);
+  color: var(--accent-primary);
+}
+
+.r-accent { color: var(--accent-primary); }
+.r-italic { font-style: italic; }

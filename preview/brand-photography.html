@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#EFE3D1;padding:16px;display:flex;gap:10px;flex-wrap:wrap;}
+.photo{position:relative;overflow:hidden;box-shadow:0 14px 30px -18px rgba(61,43,31,.35);}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:.5s ease-out;}
+.photo:hover img{transform:scale(1.04);}
+.photo .cap{position:absolute;bottom:0;left:0;right:0;padding:10px 12px;background:linear-gradient(to top,rgba(61,43,31,.7),transparent);color:#FBF2E4;font-family:'Fraunces',serif;font-style:italic;font-size:13px;}
+.portrait-wrap{position:relative;}
+.portrait{width:110px;height:110px;border-radius:50%;object-fit:cover;filter:grayscale(1) contrast(1.05);display:block;box-shadow:0 20px 40px -15px rgba(61,43,31,.35);}
+.portrait-wrap::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1.5px dashed #3D2B1F;opacity:.35;}
+</style></head><body>
+
+<div class="portrait-wrap">
+  <img class="portrait" src="../assets/profile.jpg" alt="Reheeshaa profile">
+</div>
+
+<div class="photo" style="width:130px;height:170px;">
+  <img src="../assets/1.jpg" alt="Morning stretch">
+  <div class="cap">slow morning</div>
+</div>
+
+<div class="photo" style="width:130px;height:170px;">
+  <img src="../assets/tea.jpg" alt="Tea ritual">
+  <div class="cap">tea ritual</div>
+</div>
+
+<div class="photo" style="width:130px;height:130px;">
+  <img src="../assets/food-pasta.png" alt="Pasta">
+  <div class="cap">pasta bowl</div>
+</div>
+
+<div class="photo" style="width:130px;height:130px;">
+  <img src="../assets/food-pink-eggs.png" alt="Pink eggs">
+  <div class="cap">egg diaries</div>
+</div>
+
+<div class="photo" style="width:130px;height:130px;">
+  <img src="../assets/garden.jpg" alt="Garden">
+  <div class="cap">garden</div>
+</div>
+
+<div class="photo" style="width:130px;height:130px;">
+  <img src="../assets/night.jpg" alt="Night">
+  <div class="cap">night</div>
+</div>
+
+</body></html>

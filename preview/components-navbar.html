@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#FBF2E4;}
+
+/* Navbar */
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;border-bottom:1px solid rgba(61,43,31,.1);background:#FBF2E4;}
+.brand{font-family:'Fraunces',serif;font-weight:500;font-size:18px;letter-spacing:-.01em;color:#3D2B1F;display:flex;align-items:center;gap:8px;}
+.mark{width:26px;height:26px;border-radius:50%;background:#3D2B1F;color:#FBF2E4;display:grid;place-items:center;font-size:12px;font-family:'Fraunces',serif;}
+.links{display:flex;gap:28px;font-size:12px;color:#5A4436;letter-spacing:.14em;text-transform:uppercase;}
+.links a{text-decoration:none;color:inherit;transition:.2s;}
+.links a:hover{color:#C96A4E;}
+.cta-btn{font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:9px 18px;border-radius:999px;background:#3D2B1F;color:#FBF2E4;text-decoration:none;font-weight:500;}
+
+/* Scroll-up variant (with blur) */
+nav.scrolled{background:rgba(251,242,228,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);}
+</style></head><body>
+
+<nav>
+  <div class="brand"><span class="mark">R</span> Reheeshaa</div>
+  <div class="links">
+    <a href="#">About</a>
+    <a href="#">Food</a>
+    <a href="#">Routines</a>
+    <a href="#">Collabs</a>
+  </div>
+  <a class="cta-btn" href="#">Let's talk</a>
+</nav>
+
+<nav class="scrolled" style="margin-top:12px;">
+  <div class="brand"><span class="mark">R</span> Reheeshaa</div>
+  <div class="links">
+    <a href="#">About</a>
+    <a href="#">Food</a>
+    <a href="#">Routines</a>
+    <a href="#">Collabs</a>
+  </div>
+  <a class="cta-btn" href="#">Let's talk</a>
+</nav>
+
+</body></html>

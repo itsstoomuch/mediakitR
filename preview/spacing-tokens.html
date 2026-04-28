@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#EFE3D1;padding:20px;}
+.section{margin-bottom:18px;}
+.title{font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#5A4436;margin-bottom:10px;}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start;}
+
+/* radius */
+.radius-demo{display:flex;flex-direction:column;align-items:center;gap:6px;}
+.rbox{background:#FBF2E4;border:1.5px solid rgba(61,43,31,.25);}
+.rlabel{font-size:9px;color:#5A4436;font-family:monospace;text-align:center;}
+
+/* spacing */
+.sp-row{display:flex;gap:2px;align-items:flex-end;}
+.sp-block{background:#C96A4E;opacity:.7;}
+.sp-label{font-size:8px;color:#5A4436;font-family:monospace;margin-top:4px;text-align:center;}
+
+/* shadow */
+.shadow-card{background:#FBF2E4;padding:14px 18px;border-radius:4px;font-size:11px;color:#3D2B1F;min-width:100px;font-family:'Fraunces',serif;}
+</style></head><body>
+
+<div class="section">
+  <div class="title">Border Radius</div>
+  <div class="row">
+    <div class="radius-demo">
+      <div class="rbox" style="width:48px;height:48px;border-radius:0px;"></div>
+      <div class="rlabel">none<br>0px</div>
+    </div>
+    <div class="radius-demo">
+      <div class="rbox" style="width:48px;height:48px;border-radius:4px;"></div>
+      <div class="rlabel">sm<br>4px</div>
+    </div>
+    <div class="radius-demo">
+      <div class="rbox" style="width:80px;height:32px;border-radius:999px;"></div>
+      <div class="rlabel">pill<br>999px</div>
+    </div>
+    <div class="radius-demo">
+      <div class="rbox" style="width:48px;height:48px;border-radius:50%;"></div>
+      <div class="rlabel">circle<br>50%</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="title">Spacing Scale</div>
+  <div class="sp-row">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:4px;"></div><div class="sp-label">4</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:8px;"></div><div class="sp-label">8</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:14px;"></div><div class="sp-label">14</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:18px;"></div><div class="sp-label">18</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:24px;"></div><div class="sp-label">24</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:28px;"></div><div class="sp-label">28</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:32px;"></div><div class="sp-label">32</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:40px;"></div><div class="sp-label">40</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:48px;"></div><div class="sp-label">48</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:60px;"></div><div class="sp-label">60</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+      <div class="sp-block" style="width:14px;height:80px;"></div><div class="sp-label">80</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="title">Shadow System</div>
+  <div class="row">
+    <div class="shadow-card" style="box-shadow:0 4px 10px rgba(61,43,31,.25);">shadow-badge</div>
+    <div class="shadow-card" style="box-shadow:0 6px 18px -8px rgba(61,43,31,.2);">shadow-keyword</div>
+    <div class="shadow-card" style="box-shadow:0 14px 30px -18px rgba(61,43,31,.3);">shadow-card</div>
+    <div class="shadow-card" style="box-shadow:0 20px 40px -15px rgba(61,43,31,.3);">shadow-sticker</div>
+    <div class="shadow-card" style="box-shadow:0 30px 80px -30px rgba(61,43,31,.25),0 2px 4px rgba(61,43,31,.05);">shadow-page</div>
+  </div>
+</div>
+
+</body></html>

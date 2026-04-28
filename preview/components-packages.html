@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#F6E8D4;padding:0;display:flex;}
+.pk{padding:28px 24px;display:flex;flex-direction:column;gap:12px;min-height:280px;flex:1;border-right:1px solid rgba(61,43,31,.2);position:relative;}
+.pk:last-child{border-right:none;}
+.pn{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:#C96A4E;}
+h3{font-family:'Fraunces',serif;font-weight:400;font-size:26px;line-height:1.05;letter-spacing:-.02em;color:#3D2B1F;}
+h3 em{font-style:italic;}
+.tl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#5A4436;}
+ul{list-style:none;display:flex;flex-direction:column;gap:7px;margin-top:4px;}
+ul li{font-size:12px;color:#5A4436;padding-left:16px;position:relative;line-height:1.4;}
+ul li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:1px;background:currentColor;opacity:.5;}
+.price{margin-top:auto;font-family:'Fraunces',serif;font-size:16px;font-style:italic;color:#3D2B1F;padding-top:14px;border-top:1px solid rgba(61,43,31,.2);}
+.featured{background:#3D2B1F;color:#FBF2E4;}
+.featured h3,.featured .price{color:#FBF2E4;}
+.featured .pn{color:#F3D89B;}
+.featured .tl{color:#F3D89B;}
+.featured ul li{color:rgba(251,242,228,.8);}
+.featured .price{border-top-color:rgba(251,242,228,.25);}
+.ribbon{position:absolute;top:12px;right:12px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;background:#C96A4E;color:#FBF2E4;padding:4px 8px;font-weight:600;transform:rotate(4deg);}
+</style></head><body>
+<div class="pk">
+  <div class="pn">package one</div>
+  <h3>Story <em>Feature</em></h3>
+  <div class="tl">1 story · 24 hr</div>
+  <ul>
+    <li>One dedicated story slide</li>
+    <li>Product in-use photograph</li>
+    <li>Tag + link sticker</li>
+  </ul>
+  <div class="price">Contact for rates</div>
+</div>
+<div class="pk featured">
+  <div class="ribbon">most loved</div>
+  <div class="pn">package two</div>
+  <h3>Feed <em>Post</em></h3>
+  <div class="tl">1 static post · 72 hr</div>
+  <ul>
+    <li>One in-feed photograph</li>
+    <li>Long-form caption, my voice</li>
+    <li>2 rounds creative review</li>
+    <li>30-day usage rights</li>
+  </ul>
+  <div class="price">Contact for rates</div>
+</div>
+<div class="pk">
+  <div class="pn">package three</div>
+  <h3>Full <em>Collab</em></h3>
+  <div class="tl">3 posts + stories · 2 weeks</div>
+  <ul>
+    <li>Three coordinated feed posts</li>
+    <li>Supporting story series</li>
+    <li>One reel (if brand fits)</li>
+  </ul>
+  <div class="price">Contact for rates</div>
+</div>
+</body></html>

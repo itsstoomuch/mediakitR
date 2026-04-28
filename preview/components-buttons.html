@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#EFE3D1;padding:24px 20px;display:flex;flex-direction:column;gap:16px;}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+.lbl{font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#5A4436;min-width:80px;}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;cursor:pointer;text-decoration:none;transition:.3s ease-out;border:none;}
+.btn-primary{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:13px 28px;border-radius:999px;background:#3D2B1F;color:#FBF2E4;}
+.btn-primary:hover{background:#2A1C13;}
+.btn-outline{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:12px 28px;border-radius:999px;border:1px solid #3D2B1F;color:#3D2B1F;background:transparent;}
+.btn-outline:hover{background:#3D2B1F;color:#FBF2E4;}
+.btn-terra{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:13px 28px;border-radius:999px;background:#C96A4E;color:#FBF2E4;}
+.btn-terra:hover{background:#b05540;}
+.btn-sm{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:8px 16px;border-radius:999px;background:#3D2B1F;color:#FBF2E4;}
+.btn-ghost{font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:12px 0;color:#3D2B1F;background:transparent;position:relative;}
+.btn-ghost::after{content:"";position:absolute;bottom:8px;left:0;width:0;height:1px;background:#C96A4E;transition:.3s ease-out;}
+.btn-ghost:hover::after{width:100%;}
+/* text CTA */
+.text-cta{font-family:'Fraunces',serif;font-size:18px;font-style:italic;color:#C96A4E;position:relative;display:inline-block;}
+.text-cta::after{content:"";position:absolute;bottom:-2px;left:0;width:100%;height:1px;background:#C96A4E;opacity:.4;}
+</style></head><body>
+
+<div class="row">
+  <div class="lbl">Primary</div>
+  <a class="btn btn-primary" href="#">Let's talk</a>
+  <a class="btn btn-primary" href="#" style="opacity:.5;cursor:not-allowed;">Disabled</a>
+</div>
+<div class="row">
+  <div class="lbl">Outline</div>
+  <a class="btn btn-outline" href="#">View work</a>
+</div>
+<div class="row">
+  <div class="lbl">Terracotta</div>
+  <a class="btn btn-terra" href="#">Collaborate</a>
+</div>
+<div class="row">
+  <div class="lbl">Small</div>
+  <a class="btn btn-sm" href="#">Slow Living</a>
+  <a class="btn btn-sm" href="#" style="background:#C96A4E;">Food</a>
+  <a class="btn btn-sm" href="#" style="background:#6E7A4F;">Garden</a>
+</div>
+<div class="row">
+  <div class="lbl">Ghost</div>
+  <a class="btn btn-ghost" href="#">See all posts ↗</a>
+</div>
+<div class="row">
+  <div class="lbl">Text CTA</div>
+  <a class="text-cta" href="#">contact me</a>
+</div>
+
+</body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter:wght@400;500&family=Caveat:wght@400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#3D2B1F;padding:28px;display:flex;flex-direction:column;gap:20px;}
+
+/* value card */
+.vcard{border:1px solid rgba(251,242,228,.2);padding:28px;display:flex;flex-direction:column;gap:12px;background:rgba(251,242,228,.03);position:relative;min-height:200px;flex:1;}
+.vi{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:#F3D89B;}
+.vcard h3{font-family:'Fraunces',serif;font-weight:400;font-size:26px;letter-spacing:-.02em;line-height:1.05;color:#FBF2E4;}
+.vcard h3 em{font-style:italic;color:#F3D89B;}
+.vcard p{font-size:13px;line-height:1.6;color:rgba(251,242,228,.75);}
+.scribble{color:#F3D89B;margin-top:auto;}
+
+.row{display:flex;gap:16px;}
+
+svg.scribble-line{overflow:visible;}
+</style>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="scribble-under" viewBox="0 0 160 24"><path d="M4 14 Q 30 4,55 12 T 105 14 T 156 10" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"></path></symbol>
+  </defs>
+</svg>
+</head><body>
+<div class="row">
+  <div class="vcard">
+    <div class="vi">a. the audience</div>
+    <h3>A <em>niche</em> audience, not a loud one</h3>
+    <p>Followers who came for slow mornings and simple food — they read captions, save recipes, and actually reply to stories.</p>
+    <svg class="scribble" width="80" height="14"><use href="#scribble-under"></use></svg>
+  </div>
+  <div class="vcard">
+    <div class="vi">b. the craft</div>
+    <h3>High <em>visual</em> quality, consistent grid</h3>
+    <p>Every photo is shot in natural window light, on real dishes. No AI, no props I wouldn't own.</p>
+    <svg class="scribble" width="80" height="14"><use href="#scribble-under"></use></svg>
+  </div>
+  <div class="vcard">
+    <div class="vi">c. the community</div>
+    <h3>An <em>engaged</em>, reply-back community</h3>
+    <p>Small following, high trust. When I recommend something, the people here listen.</p>
+    <svg class="scribble" width="80" height="14"><use href="#scribble-under"></use></svg>
+  </div>
+</div>
+</body></html>

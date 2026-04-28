@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reheeshaa — Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:#EFE3D1;font-family:'Inter',sans-serif;color:#2A1C13;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  /* Lenis-style smooth scroll via CSS */
+  html{scroll-behavior:smooth;}
+</style>
+</head>
+<body>
+
+<!-- Component scripts -->
+<script type="text/babel" src="Nav.jsx"></script>
+<script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="About.jsx"></script>
+<script type="text/babel" src="ContentGrid.jsx"></script>
+<script type="text/babel" src="WhyCollab.jsx"></script>
+<script type="text/babel" src="Packages.jsx"></script>
+<script type="text/babel" src="FeedStrip.jsx"></script>
+<script type="text/babel" src="Contact.jsx"></script>
+
+<template id="__bundler_thumbnail" data-bg-color="#3D2B1F">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#3D2B1F"/>
+    <text x="600" y="380" font-family="Georgia,serif" font-size="96" font-weight="400" fill="#FBF2E4" text-anchor="middle" letter-spacing="-4">Reheeshaa</text>
+    <text x="600" y="460" font-family="Georgia,serif" font-size="28" fill="#C96A4E" text-anchor="middle" letter-spacing="6" font-style="italic">slow mornings, simple meals</text>
+    <circle cx="200" cy="180" r="60" fill="#C96A4E" opacity=".3"/>
+    <circle cx="1000" cy="620" r="80" fill="#E8C5C0" opacity=".2"/>
+    <path d="M100 400 L100 540" stroke="#6E7A4F" stroke-width="2" fill="none"/>
+    <path d="M100 420 Q85 415 80 400 Q95 410 100 420 Z" fill="#6E7A4F"/>
+    <path d="M100 460 Q115 455 120 440 Q105 450 100 460 Z" fill="#6E7A4F"/>
+    <path d="M100 500 Q82 498 76 480 Q97 490 100 500 Z" fill="#6E7A4F"/>
+  </svg>
+</template>
+<div id="root"></div>
+
+<script type="text/babel">
+const App = () => (
+  <>
+    <Nav />
+    <Hero />
+    <About />
+    <ContentGrid />
+    <WhyCollab />
+    <Packages />
+    <FeedStrip />
+    <Contact />
+  </>
+);
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body>
+</html>
